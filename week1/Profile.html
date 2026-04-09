@@ -3,35 +3,339 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tiêu đề trang</title>
+        <title>Hoài Tiên - Portfolio</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Nunito:wght@300;400;500;600&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="Profile.css">
     </head>
 
     <body>
 
         <header>
-            <!-- Logo, tiêu đề, menu -->
+            <a href="#" class="header__logo">Hoài<span> Tiên</span></a>
+            <nav>
+                <a href="#about" class="active">Giới thiệu</a>
+                <a href="#skills">Kỹ năng</a>
+                <a href="#blog">Bài viết</a>
+                <a href="#media">Media</a>
+                <a href="#contact">Liên hệ</a>
+            </nav>
         </header>
 
-        <nav>
-            <!-- Thanh điều hướng -->
-        </nav>
-
         <main>
-            <section>
-                <!-- Nội dung 1 -->
-            </section>
 
-            <article>
-                <!-- Bài viết chính -->
-            </article>
+            <aside>
+                <div class="profile-card">
+                    <div class="profile-card__banner"></div>
+                    <div class="avatar-placeholder">HT</div>
+                    <div class="profile-card__body">
+                        <p class="profile-card__name">Hoài Tiên</p>
+                        <p class="profile-card__title">UI/UX Designer &amp;
+                            Developer</p>
+                        <p class="profile-card__bio">Yêu thích thiết kế giao
+                            diện đẹp, tinh tế và tạo ra những trải nghiệm người
+                            dùng ấm áp.</p>
+                        <div class="profile-card__stats">
+                            <div class="stat">
+                                <span class="stat__num">2+</span>
+                                <span class="stat__label">Năm KN</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__num">18</span>
+                                <span class="stat__label">Dự án</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__num">9</span>
+                                <span class="stat__label">Khách hàng</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>Thông tin</h3>
+                    <ul class="info-list">
+                        <li><span class="label">Vị trí</span> Hồ Chí Minh,
+                            VN</li>
+                        <li><span class="label">Email</span>
+                            hoaitien@example.com</li>
+                        <li><span class="label">GitHub</span>
+                            github.com/hoaitien</li>
+                        <li><span class="label">Ngôn ngữ</span> Tiếng Việt,
+                            English</li>
+                        <li><span class="label">Sở thích</span> Chơi thể
+                            thao</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="content-area">
+
+                <section id="about" class="card hero">
+                    <h2 class="section-title">Về tôi</h2>
+                    <p>Xin chào! Mình là <strong>Hoài Tiên</strong> — một
+                        designer và developer yêu thích sự kết hợp giữa nghệ
+                        thuật thị giác và lập trình. Mình đang học về <em>HTML5
+                            Semantic Tags</em>, cấu trúc trang chuẩn, form,
+                        table và media embed.</p>
+                    <br>
+                    <p>Với mình, một trang web đẹp không chỉ là giao diện hào
+                        nhoáng — mà còn phải dễ tiếp cận, có cấu trúc rõ ràng và
+                        mang lại cảm xúc tốt cho người dùng.</p>
+                    <div class="tag-list">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Figma</span>
+                        <span class="tag">UI Design</span>
+                        <span class="tag">Accessibility</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                </section>
+
+                <section id="skills" class="card">
+                    <h2 class="section-title">Kỹ năng</h2>
+                    <div class="table-wrap">
+                        <table>
+                            <caption>Bảng tổng hợp kỹ năng của Hoài
+                                Tiên</caption>
+                            <thead>
+                                <tr>
+                                    <th>Công nghệ</th>
+                                    <th>Danh mục</th>
+                                    <th>Mức độ</th>
+                                    <th>Tiến độ</th>
+                                    <!-- <th>Trạng thái</th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HTML5 / CSS3</td>
+                                    <td>Front-end</td>
+                                    <td>Thành thạo</td>
+                                    <td><div class="progress-bar"><div
+                                                class="progress-bar__fill"
+                                                style="width:92%"></div></div></td>
+                                    <!-- <td><span class="badge badge--pink">Chuyên
+                                            gia</span></td> -->
+                                </tr>
+                                <tr>
+                                    <td>Figma / Design</td>
+                                    <td>UI/UX</td>
+                                    <td>Tốt</td>
+                                    <td><div class="progress-bar"><div
+                                                class="progress-bar__fill"
+                                                style="width:85%"></div></div></td>
+                                    <!-- <td><span class="badge badge--pink">Chuyên
+                                            gia</span></td> -->
+                                </tr>
+                                <tr>
+                                    <td>JavaScript</td>
+                                    <td>Front-end</td>
+                                    <td>Khá</td>
+                                    <td><div class="progress-bar"><div
+                                                class="progress-bar__fill"
+                                                style="width:65%"></div></div></td>
+                                    <!-- <td><span class="badge badge--purple">Trung
+                                            cấp</span></td> -->
+                                </tr>
+                                <tr>
+                                    <td>React.js</td>
+                                    <td>Framework</td>
+                                    <td>Đang học</td>
+                                    <td><div class="progress-bar"><div
+                                                class="progress-bar__fill"
+                                                style="width:45%"></div></div></td>
+                                    <!-- <td><span class="badge badge--rose">Học
+                                            tập</span></td> -->
+                                </tr>
+                                <tr>
+                                    <td>Git / GitHub</td>
+                                    <td>Công cụ</td>
+                                    <td>Tốt</td>
+                                    <td><div class="progress-bar"><div
+                                                class="progress-bar__fill"
+                                                style="width:78%"></div></div></td>
+                                    <!-- <td><span class="badge badge--purple">Trung
+                                            cấp</span></td> -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <article id="blog" class="card">
+                    <h2 class="section-title">Bài viết gần đây</h2>
+                    <div class="article-meta">
+                        <span>20 tháng 4, 2025</span>
+                        <span>HTML &amp; CSS</span>
+                        <span>6 phút đọc</span>
+                    </div>
+                    <h2 class="article-title">Semantic HTML — Viết code có
+                        "tâm hồn"</h2>
+                    <p>Ngày đầu học HTML, mình cứ dùng <code>&lt;div&gt;</code>
+                        cho tất cả mọi thứ. Mãi về sau mới hiểu rằng
+                        <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                        <code>&lt;main&gt;</code>,
+                        <code>&lt;article&gt;</code>... không chỉ là tên đẹp —
+                        chúng mang ý nghĩa thật sự cho cả trình duyệt lẫn người
+                        đọc code.</p>
+                    <blockquote>
+                        "Một trang web tốt không cần nhìn thấy để hiểu — ngay cả khi đọc code thuần, cấu trúc đã nói lên tất cả."
+                    </blockquote>
+                    <p>Đây là bài học mình muốn chia sẻ với bất kỳ ai mới bắt
+                        đầu: hãy yêu <em>semantic HTML</em> từ sớm. Nó sẽ giúp
+                        bạn viết code sạch, dễ bảo trì và thân thiện với người
+                        dùng khuyết tật.</p>
+                </article>
+
+                <section id="media" class="card">
+                    <h2 class="section-title">Media &amp; Dự án</h2>
+
+                    <div class="media-grid">
+                        <div class="media-item">
+                            <figure>
+                                <img
+                                    src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80"
+                                    alt="Dự án thiết kế giao diện app"
+                                    width="600" height="170" loading="lazy"
+                                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                                <div class="img-placeholder"
+                                    style="display:none">🌸 Ảnh dự án 1</div>
+                                <figcaption>App design — Figma
+                                    prototype</figcaption>
+                            </figure>
+                        </div>
+                        <div class="media-item">
+                            <figure>
+                                <img
+                                    src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&q=80"
+                                    alt="Portfolio cá nhân"
+                                    width="600" height="170" loading="lazy"
+                                    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                                <div class="img-placeholder"
+                                    style="display:none">Ảnh dự án 2</div>
+                                <figcaption>Portfolio website — HTML &amp;
+                                    CSS</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div style="margin-top:1.25rem;">
+                        <p
+                            style="font-size:0.85rem;color:var(--muted);margin-bottom:0.6rem;">
+                            Video giới thiệu dự án (YouTube embed):</p>
+                        <div class="video-embed">
+                            <iframe
+                                src="https://youtu.be/NBS7OlWbgS4?si=-9oGYzRjJTjRMzFK"
+                                title="Giới thiệu dự án của Hoài Tiên"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div style="margin-top:1.25rem;">
+                        <p
+                            style="font-size:0.85rem;color:var(--muted);margin-bottom:0.5rem;">
+                            Audio:</p>
+                        <audio controls
+                            style="width:100%;border-radius:10px;accent-color:var(--accent)">
+                            <source src="audio-demo.mp3" type="audio/mpeg">
+                            Trình duyệt của bạn không hỗ trợ thẻ audio.
+                        </audio>
+                    </div>
+                </section>
+
+                <section id="contact" class="card">
+                    <h2 class="section-title">Liên hệ với mình</h2>
+                    <form action="#" method="POST" novalidate>
+
+                        <div class="form-group">
+                            <label for="name">Họ và tên *</label>
+                            <input type="text" id="name" name="name"
+                                placeholder="Nguyễn Văn A" required
+                                autocomplete="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email"
+                                placeholder="email@example.com" required
+                                autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="tel" id="phone" name="phone"
+                                placeholder="0901 234 567" autocomplete="tel">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topic">Chủ đề</label>
+                            <select id="topic" name="topic">
+                                <option value>-- Chọn chủ đề --</option>
+                                <option value="job">Cơ hội việc làm</option>
+                                <option value="project">Hợp tác dự án</option>
+                                <option value="design">Tư vấn thiết kế</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full">
+                            <label>Hình thức liên lạc ưu tiên</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="contact_pref"
+                                        value="email" checked> Email</label>
+                                <label><input type="radio" name="contact_pref"
+                                        value="phone"> Điện thoại</label>
+                                <label><input type="radio" name="contact_pref"
+                                        value="chat"> Chat / Zalo</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="message">Lời nhắn *</label>
+                            <textarea id="message" name="message"
+                                placeholder="Nhập nội dung bạn muốn trao đổi với mình nhé..."
+                                required></textarea>
+                        </div>
+
+                        <div class="form-group full">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="agree" name="agree"
+                                    value="yes">
+                                <label for="agree">
+                                    Tôi đồng ý với <a href="#"
+                                        style="color:var(--accent)">chính sách
+                                        bảo mật</a>
+                                    và cho phép lưu thông tin liên hệ.
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="reset" class="btn btn--outline">Xoá
+                                form</button>
+                            <button type="submit" class="btn btn--primary">Gửi
+                                lời nhắn </button>
+                        </div>
+                    </form>
+                </section>
+
+            </div>
         </main>
 
-        <aside>
-            <!-- Sidebar -->
-        </aside>
-
         <footer>
-            <!-- Thông tin cuối trang -->
+            <div class="footer-links">
+                <a href="#about">Giới thiệu</a>
+                <a href="#skills">Kỹ năng</a>
+                <a href="#blog">Bài viết</a>
+                <a href="#media">Media</a>
+                <a href="#contact">Liên hệ</a>
+            </div>
+            <p>© 2025 <strong>Hoài Tiên</strong> · Được xây dựng bằng thuần HTML
+                &amp; CSS </p>
         </footer>
 
     </body>
